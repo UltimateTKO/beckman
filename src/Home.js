@@ -1,21 +1,33 @@
 import * as React from "react";
-import { Button } from "@mui/material";
+import { Button, Stack } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+
+var a = 1;
 
 const Home = () => {
 	const navigate = useNavigate();
 
 	return (
 		<>
-			<ButtonGroup>
-				<Button>text</Button>
-				<Button size="small" onClick={() => navigate("/App")}>
+			<Stack my={2} direction="row" justifyContent="end">
+				<Button variant="text" size="small">
+					text
+				</Button>
+				<Button
+					variant="text"
+					size="small"
+					onClick={() => navigate("/App")}
+				>
 					app
 				</Button>
-				<Button size="large" onClick={() => navigate("/App")}>
+				<Button
+					variant="text"
+					size="small"
+					onClick={() => navigate("/Three")}
+				>
 					app2
 				</Button>
-			</ButtonGroup>
+			</Stack>
 		</>
 	);
 };
