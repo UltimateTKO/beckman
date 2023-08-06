@@ -1,15 +1,17 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App";
-import Home from "./Home";
-import Game from "./Three";
+import { MenuBer } from "./Home";
+import { Play, Board } from "./Three";
+import Game from "./Test";
 
 const Routers = () => {
 	return (
 		<BrowserRouter>
 			<Routes>
-				<Route path="/" element={<Home />} />
+				<Route path="/" element={<MenuBer />} />
 				<Route path="/App" element={<App />} />
-				<Route path="/Three" element={<Game />} />
+				<Route path="/Test" element={<Game />} />
+				<Route path="/Three" element={<Play />} />
 			</Routes>
 		</BrowserRouter>
 	);

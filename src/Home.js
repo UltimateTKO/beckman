@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 var a = 1;
 
-const Home = () => {
+const MenuBer = () => {
 	const navigate = useNavigate();
 
 	return (
@@ -16,7 +16,7 @@ const Home = () => {
 				<Button
 					variant="text"
 					size="small"
-					onClick={() => navigate("/App")}
+					onClick={() => navigate("/Test")}
 				>
 					app
 				</Button>
@@ -32,4 +32,4 @@ const Home = () => {
 	);
 };
 
-export default Home;
+export { MenuBer };
