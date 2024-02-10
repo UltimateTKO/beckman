@@ -1,0 +1,76 @@
+.Main {
+	position: sticky;
+	top: 0px;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 1px;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.MainFlame {
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: relative;
+}
+
+.PaperFlame {
+	margin: auto;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	width: 99%;
+	display: flex;
+	align-items: center;
+}
+
+.Concept {
+}
+
+.Instagram {
+	width: 50%;
+}
+.FlameImage {
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+	position: absolute;
+	animation: imgfade 5s infinite;
+	opacity: 0;
+}
+
+.FlameLogo {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	animation: imgfade 5s infinite;
+	opacity: 0;
+}
+
+.Map {
+	width: 65%;
+	height: 550px;
+	border: 0;
+}
+
+@keyframes imgfade {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	60% {
+		opacity: 1;
+	}
+	80% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}

@@ -1,16 +1,17 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App";
-import { MenuBer } from "./Home";
+import { Home } from "./scene/Home";
 import { Play, Board } from "./Three";
-import Game from "./Test";
+import { TTest } from "./Test";
+import * as Menu from "./Menu";
 
 const Routers = () => {
 	return (
 		<BrowserRouter>
 			<Routes>
-				<Route path="/" element={<MenuBer />} />
+				<Route path="/" element={<Home />} />
 				<Route path="/App" element={<App />} />
-				<Route path="/Test" element={<Game />} />
+				<Route path="/Test" element={<TTest />} />
 				<Route path="/Three" element={<Play />} />
 			</Routes>
 		</BrowserRouter>

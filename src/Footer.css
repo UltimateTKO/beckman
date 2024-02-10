@@ -1,0 +1,17 @@
+.instagram_logo {
+	width: 15%;
+}
+
+.footer {
+	clear: both;
+	font-weight: 700;
+	color: #222;
+	text-align: center;
+	background-color: #888;
+}
+
+.copylight {
+	font-size: x-small;
+	font-weight: 700;
+	color: #444;
+}
