@@ -1,0 +1,18 @@
+.PaperFlameD {
+	margin: auto;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	width: 99%;
+	display: flex;
+	/* align-items: center; */
+}
+
+.PaperFlameM {
+	margin: auto;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	width: 99%;
+	height: 100vh;
+	/* align-items: center; */
+	/* text-align: center; */
+}

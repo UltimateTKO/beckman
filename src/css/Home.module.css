@@ -15,62 +15,52 @@
 	position: relative;
 }
 
-.PaperFlame {
-	margin: auto;
-	margin-top: 1%;
-	margin-bottom: 1%;
-	width: 99%;
-	display: flex;
-	align-items: center;
-}
-
 .Concept {
 }
 
-.Instagram {
+.InstagramImage {
 	width: 50%;
 }
-.FlameImage {
+
+.FlameP {
 	width: 100%;
+	position: absolute;
+	animation: imgfade 10s infinite;
+}
+
+.FlameImage {
 	height: 100vh;
 	object-fit: cover;
-	position: absolute;
-	animation: imgfade 5s infinite;
 	opacity: 0;
 }
 
 .FlameLogo {
-	width: 100%;
-	position: absolute;
 	top: 50%;
 	transform: translate(0, -50%);
-	animation: imgfade 5s infinite;
-	opacity: 0;
-}
-
-.Map {
-	width: 65%;
-	height: 550px;
-	border: 0;
 }
 
 @keyframes imgfade {
 	0% {
 		opacity: 0;
 	}
-	20% {
+	10% {
 		opacity: 1;
 	}
 	40% {
 		opacity: 1;
 	}
-	60% {
-		opacity: 1;
-	}
-	80% {
-		opacity: 1;
+	50% {
+		opacity: 0;
 	}
 	100% {
 		opacity: 0;
 	}
+}
+
+.FlameP:nth-of-type(1) {
+	animation-delay: 0s;
+}
+
+.FlameP:nth-of-type(2) {
+	animation-delay: 5s;
 }

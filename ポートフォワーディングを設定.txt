@@ -1,0 +1,12 @@
+コマンドプロンプト（管理者権限）で行う
+
+ポートフォワーディングを設定
+netsh.exe interface portproxy add v4tov4 listenaddress=192.168.. listenport=3000 connectaddress=WSLのIP connectport=3000
+netsh.exe interface portproxy add v4tov4 listenaddress=192.168.11.4 listenport=3000 connectaddress=172.23.184.252 connectport=3000
+
+設定確認
+netsh.exe interface portproxy show v4tov4
+
+削除するときは以下
+netsh.exe interface portproxy delete v4tov4 listenport=3000 listenaddress=192.168..
+netsh.exe interface portproxy delete v4tov4 listenport=3000 listenaddress=192.168.11.4
