@@ -7,9 +7,15 @@
 		{
 			"type": "msedge",
 			"request": "launch",
-			"name": "debug react",
+			"name": "debug react edge",
 			"url": "http://localhost:3000",
-			"webRoot": "./src"
+			"webRoot": "./FRONT/src"
+		},
+		{
+			"name": "debug node",
+			"type": "node",
+			"request": "launch",
+			"program": "./BACK/Main.js"
 		}
 	]
 }
